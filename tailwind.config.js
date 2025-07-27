@@ -3,6 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',
@@ -43,6 +50,9 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui"],
       },
       backgroundImage: {
         'grid-gray-100': 'url("data:image/svg+xml,%3csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3cg fill=\'%23f3f4f6\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'%3e%3ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3e%3ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3e%3c/g%3e%3c/svg%3e")',

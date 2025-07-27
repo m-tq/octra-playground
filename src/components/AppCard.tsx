@@ -8,7 +8,7 @@ interface AppCardProps {
   description: string;
   url: string;
   icon: 'wallet' | 'globe' | 'droplets';
-  gradient: string;
+  accent: string;
 }
 
 const iconMap = {
@@ -17,33 +17,33 @@ const iconMap = {
   droplets: Droplets,
 };
 
-export function AppCard({ title, description, url, icon, gradient }: AppCardProps) {
+export function AppCard({ title, description, url, icon, accent }: AppCardProps) {
   const IconComponent = iconMap[icon];
 
   return (
-    <Card className={`border-0 bg-gradient-to-br ${gradient} text-white`}>
+    <Card className="relative overflow-hidden transition-all duration-200 hover:shadow-lg group">
+      <div className={`absolute inset-0 bg-gradient-to-br ${accent} opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none`} />
       <CardHeader>
         <div className="flex items-center space-x-3">
-          <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
-            <IconComponent className="h-6 w-6" />
+          <div className={`p-2 rounded-lg bg-gradient-to-br ${accent} shadow-sm`}>
+            <IconComponent className="h-5 w-5 text-white" />
           </div>
-          <CardTitle className="text-white">{title}</CardTitle>
+          <CardTitle className="text-lg">{title}</CardTitle>
         </div>
-        <CardDescription className="text-white/80 mt-2">
+        <CardDescription className="mt-2 leading-relaxed">
           {description}
         </CardDescription>
       </CardHeader>
-      <CardFooter>
-        <Button
-          asChild
-          variant="secondary"
-          className="w-full bg-white/20 hover:bg-white/30 text-white border-0 backdrop-blur-sm"
+      <CardFooter className="relative z-10">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-10 px-4 py-2 w-full cursor-pointer no-underline bg-gradient-to-r ${accent} text-white hover:opacity-90 shadow-sm`}
         >
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            Launch App
-            <ExternalLink className="ml-2 h-4 w-4" />
-          </a>
-        </Button>
+          Launch App
+          <ExternalLink className="ml-2 h-4 w-4" />
+        </a>
       </CardFooter>
     </Card>
   );

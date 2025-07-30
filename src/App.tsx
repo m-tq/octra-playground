@@ -6,19 +6,26 @@ import { Gamepad2 } from 'lucide-react';
 
 const apps = [
   {
-    title: 'Web Wallet',
-    description: 'Un-Official Octra Web Wallet for secure transactions and account management',
-    url: 'https://oct.xme.my.id',
+    title: 'Octra Wallet',
+    description: 'Un-Official Octra Wallet for secure transactions and account management',
+    url: 'https://github.com/m-tq/Octra-Ekstension',
     icon: 'wallet' as const,
     accent: 'from-blue-500 to-blue-600',
   },
   {
-    title: 'ONS (Octra Name Service)',
-    description: 'Un-Official decentralized naming service for the Octra ecosystem',
-    url: 'https://ons.xme.my.id',
+    title: 'OCS01-TEST',
+    description: 'dApp OCS01-TEST Contract Interaction Testing',
+    url: 'https://ocs01.xme.my.id',
     icon: 'globe' as const,
     accent: 'from-emerald-500 to-emerald-600',
   },
+  // {
+  //   title: 'ONS (Octra Name Service)',
+  //   description: 'Un-Official decentralized naming service for the Octra ecosystem',
+  //   url: 'https://ons.xme.my.id',
+  //   icon: 'globe' as const,
+  //   accent: 'from-emerald-500 to-emerald-600',
+  // },
   {
     title: 'Octra Faucet',
     description: 'Un-Official faucet to get test tokens for Octra development',

@@ -14,7 +14,7 @@ const apps = [
   },
   {
     title: 'OCS01-TEST',
-    description: 'dApp OCS01-TEST Contract Interaction Testing',
+    description: 'OCS01 - TEST. DApp for Testing Contract interaction on Octra Blockchain',
     url: 'https://ocs01.xme.my.id',
     icon: 'globe' as const,
     accent: 'from-emerald-500 to-emerald-600',

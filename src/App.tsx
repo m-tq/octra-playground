@@ -66,8 +66,7 @@ function AppContent() {
             </span>
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-            Explore the ecosystem of Octra applications. From wallet management to naming services,
-            everything you need for your Octra journey.
+            Explore the ecosystem of Octra applications. Wallet management, dApp Contract Testing and Faucet. Everything you need for your Octra journey.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Wallet, Globe, Droplets } from 'lucide-react';
+import { ExternalLink, Wallet, Globe, Droplets, Brain } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './ui/Card';
 import { Button } from './ui/Button';
 
@@ -7,7 +7,7 @@ interface AppCardProps {
   title: string;
   description: string;
   url: string;
-  icon: 'wallet' | 'globe' | 'droplets';
+  icon: 'wallet' | 'globe' | 'droplets' | 'brain';
   accent: string;
 }
 
@@ -15,6 +15,7 @@ const iconMap = {
   wallet: Wallet,
   globe: Globe,
   droplets: Droplets,
+  brain: Brain,
 };
 
 export function AppCard({ title, description, url, icon, accent }: AppCardProps) {

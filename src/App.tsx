@@ -19,19 +19,19 @@ const apps = [
     icon: 'globe' as const,
     accent: 'from-emerald-500 to-emerald-600',
   },
-  // {
-  //   title: 'ONS (Octra Name Service)',
-  //   description: 'Un-Official decentralized naming service for the Octra ecosystem',
-  //   url: 'https://ons.xme.my.id',
-  //   icon: 'globe' as const,
-  //   accent: 'from-emerald-500 to-emerald-600',
-  // },
   {
     title: 'Octra Faucet',
     description: 'Un-Official faucet to get test tokens for Octra development',
     url: 'https://oct-faucet.xme.my.id',
     icon: 'droplets' as const,
     accent: 'from-orange-500 to-orange-600',
+  },
+  {
+    title: 'Octra Quest',
+    description: 'Test your knowledge about Octra\'s technology and earn OCT tokens!',
+    url: 'https://octra-quest.xme.my.id',
+    icon: 'brain' as const,
+    accent: 'from-purple-500 to-purple-600',
   },
 ];
 

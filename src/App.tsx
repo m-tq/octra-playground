@@ -8,7 +8,7 @@ const apps = [
   {
     title: 'Octra Wallet',
     description: 'Un-Official Octra Wallet for secure transactions and account management',
-    url: 'https://github.com/m-tq/Octra-Extension',
+    url: 'https://chromewebstore.google.com/detail/octra-wallet/celnpgbeekcppnfbhbkcdaajdbibpdai',
     icon: 'wallet' as const,
     accent: 'from-blue-500 to-blue-600',
   },
